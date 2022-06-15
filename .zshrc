@@ -99,9 +99,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias nvim="~/nvim.appimage"
-alias v="~/nvim.appimage"
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+	alias nvim="~/nvim.appimage"
+	alias v="~/nvim.appimage"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+	alias v="nvim"	
+fi
 alias zshconfig="v ~/.zshrc"
 alias vimconfig="v ~/.config/nvim"
 # alias f="cd $(find ~/development -type d -print | fzf)"

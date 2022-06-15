@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 echo "Enter your home directory: "
 read directory
 
