@@ -78,11 +78,11 @@ vim.o.shiftwidth = 2
 vim.o.relativenumber = true
 vim.o.scrolloff = 8
 vim.o.hidden = true
-vim.o.wrap = false
+vim.o.wrap = true 
 -- vim.o.colorcolumn = "yes"
 vim.g.nohlsearch = true
-vim.g.neoterm_default_mod = "vertical"
-vim.g.neoterm_size = 60
+vim.g.neoterm_default_mod = "botright"
+-- vim.g.neoterm_size = 60
 vim.g.neoterm_autoinsert = 1
 
 -- LSP Setup
@@ -182,6 +182,7 @@ local language_servers = {"pyright", "tsserver", "rls", "clangd"}
 --	}
 -- end 
 
+-- lsp.jdtls.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.pyright.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.tsserver.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.rls.setup{capabilities = capabilities, on_attach=on_attach}
