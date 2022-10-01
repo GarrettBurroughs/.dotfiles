@@ -8,7 +8,7 @@ ENABLE_CORRECTION="true"
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 COMPLETION_WAITING_DOTS="true"
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
-plugins=(git rust)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -23,6 +23,7 @@ fi
 # Aliases
 alias zshconfig="~/.zsh/zshconfig.sh"
 alias vimconfig="v ~/.config/nvim"
+alias cheatsheet="v ~/cheatsheet.md"
 # alias f="cd $(find ~/development -type d -print | fzf)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -33,8 +34,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Source any local configurations
 test -f .zshlocal 
-if [[ $? -eq 1 ]] then 
-	echo "local Configuration does not exist" 
-	touch .zshlocal
-fi
+touch .zshlocal
 source .zshlocal
