@@ -2,4 +2,4 @@
 	email = garrettburroughs02@gmail.com
 	name = Garrett Burroughs
 [core]
-	editor = vim
+	editor = nvim
