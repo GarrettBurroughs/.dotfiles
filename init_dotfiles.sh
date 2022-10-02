@@ -18,7 +18,7 @@ fi
 copy_files () {
 	files="$(ls -A $1)"
 	objArr=( ${=files} )
-	exclude=".git README.md init_dotfile.sh"
+	exclude=".git README.md init_dotfile.sh .gitignore"
 	
 	for object in $objArr; do
 		if echo $exclude | grep -qs $object; then
