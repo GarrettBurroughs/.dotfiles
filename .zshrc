@@ -104,10 +104,17 @@ alias nvim="~/nvim.appimage"
 alias v="~/nvim.appimage"
 alias zshconfig="v ~/.zshrc"
 alias vimconfig="v ~/.config/nvim"
+gtouch() {
+	if [ -z $1 ]; then 
+		echo "usage: gtouch <file>";
+	else 
+		touch $1 & git add $1;
+	fi
+}
 # alias f="cd $(find ~/development -type d -print | fzf)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+export PATH="$PATH:/home/garrettburroughs/.jdks/corretto-17.0.4.1/bin"
