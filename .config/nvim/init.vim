@@ -27,7 +27,7 @@ Plug 'tpope/vim-commentary'
 Plug 'sbdchd/neoformat'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-context'
-
+Plug 'wuelnerdotexe/vim-astro'
 
 
 " Color theme
