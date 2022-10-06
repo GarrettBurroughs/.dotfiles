@@ -9,12 +9,13 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'mfussenegger/nvim-jdtls'
 
-" Git features 
+" Git features
 Plug 'itchyny/vim-gitbranch'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
-		
+
 " Navigation
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kassio/neoterm'
@@ -31,6 +32,8 @@ Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " Color theme
 Plug 'gruvbox-community/gruvbox'
+Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
 
 call plug#end()
 

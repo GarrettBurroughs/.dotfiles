@@ -1,7 +1,7 @@
 colorscheme gruvbox
-syntax on 
-set number 
-set ignorecase 
+syntax on
+set number
+set ignorecase
 set splitright
 set smartcase
 set signcolumn=yes
@@ -18,18 +18,18 @@ set nohlsearch
 
 let g:mapleader=" "
 let g:neoterm_default_mod="botright"
-let g:neogerm_autoinsert=1
+let g:neoterm_autoinsert=1
 let g:neoformat_basic_format_align=1
 let g:neoformat_basic_format_retab = 1
 let g:neoformat_basic_format_trim = 1
-let g:lightline = { 
+let g:lightline = {
 			\ 'active': {
 			\ 'left' : [
-			\ 	[ 'mode', 'paste' ],
-			\		[  'gitbranch', 'readonly', 'filename', 'modified' ] 
+			\		[ 'mode', 'paste' ],
+			\		[  'gitbranch', 'readonly', 'filename', 'modified' ]
 			\ ]
 			\ },
 			\ 'component_function' : {
-			\ 	'gitbranch' : 'gitbranch#name'
+			\		'gitbranch' : 'gitbranch#name'
 			\ },
 			\ }

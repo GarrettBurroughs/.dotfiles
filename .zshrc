@@ -24,6 +24,7 @@ fi
 alias zshconfig="~/.zsh/zshconfig.sh"
 alias vimconfig="v ~/.config/nvim"
 alias cheatsheet="v ~/cheatsheet.md"
+#
 # alias f="cd $(find ~/development -type d -print | fzf)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -33,6 +34,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Source any local configurations
-test -f .zshlocal 
 touch .zshlocal
 source .zshlocal

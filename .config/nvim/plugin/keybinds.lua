@@ -8,6 +8,13 @@ vim.api.nvim_set_keymap('i', '<C-Y>', '<Esc>:split<CR>', {noremap=true})
 vim.api.nvim_set_keymap('n', '<C-N>', ':Neoformat<CR>', {noremap=true})
 vim.api.nvim_set_keymap('n', 'U', ":red<CR>", {noremap=true});
 
+-- Closing Delimters
+vim.api.nvim_set_keymap('i', '{', '{}<left>', {noremap=true});
+-- vim.api.nvim_set_keymap('i', '(', '()<left>', {noremap=true});
+vim.api.nvim_set_keymap('i', '[', '[]<left>', {noremap=true});
+vim.api.nvim_set_keymap('i', "'", "''<left>", {noremap=true});
+vim.api.nvim_set_keymap('i', '"', '""<left>', {noremap=true});
+vim.api.nvim_set_keymap('i', '{<CR>', '{<CR>}<left><Esc>O', {noremap=true});
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>f', builtin.find_files, {noremap=true})
