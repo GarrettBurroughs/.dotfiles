@@ -28,7 +28,7 @@ Plug 'sbdchd/neoformat'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'wuelnerdotexe/vim-astro'
-
+Plug 'styled-components/vim-styled-components', { 'branch': 'main'}
 
 " Color theme
 Plug 'gruvbox-community/gruvbox'
