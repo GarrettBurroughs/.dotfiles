@@ -65,6 +65,6 @@ lsp.texlab.setup{capabilities = capabilities, on_attach = on_attach}
 lsp.astro.setup{capabilities=capabilities, on_attach = on_attach, init_options = {
 	configuration = {}, 
 	typescript = { 
-		serverPath = '/home/garrettburroughs/development/my-astro-site/node_modules/typescript/lib/tsserverlibrary.js'
+		serverPath = ''-- '/Users/garrettburroughs/dev/my-astro-site/node_modules/typescript/lib/tsserverlibrary.js'
 	}
 }}
