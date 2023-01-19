@@ -13,14 +13,9 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # OS Specific configuration
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-	alias nvim="~/nvim.appimage"
-	alias v="~/nvim.appimage"
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-	alias v="nvim"	
-fi
 
 # Aliases
+alias v="nvim"
 alias zshconfig="~/.zsh/zshconfig.sh"
 alias vimconfig="v ~/.config/nvim"
 alias cheatsheet="v ~/cheatsheet.md"
