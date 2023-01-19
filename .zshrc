@@ -12,15 +12,14 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# OS Specific configuration
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Aliases
 alias v="nvim"
 alias zshconfig="~/.zsh/zshconfig.sh"
 alias vimconfig="v ~/.config/nvim"
-alias cheatsheet="v ~/cheatsheet.md"
+alias cheatsheet="v ~/.cheatsheet.md"
 # alias f="cd $(find ~/development -type d -print | fzf)"
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 gtouch() {
 	if [ -z $1 ]; then 
