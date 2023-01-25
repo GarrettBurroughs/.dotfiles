@@ -1,3 +1,4 @@
+require("mason").setup()
 -- Autocompletion
 local cmp = require'cmp'
 
@@ -57,11 +58,13 @@ end
 local servers = { 'pyright', 'rls', 'tsserver', 'clangd' }
 local lsp = require'lspconfig'
 
-lsp.pyright.setup{capabilities = capabilities, on_attach=on_attach}
+-- lsp.pyright.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.tsserver.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.rls.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.clangd.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.texlab.setup{capabilities = capabilities, on_attach = on_attach}
+lsp.pylsp.setup{capabilities = capabilities, on_attach = on_attach}
+lsp.sumneko_lua.setup{capabilities = capabilities, on_attach = on_attach}
 lsp.astro.setup{capabilities=capabilities, on_attach = on_attach, init_options = {
 	configuration = {}, 
 	typescript = { 

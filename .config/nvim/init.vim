@@ -10,6 +10,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'mfussenegger/nvim-jdtls'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 
 " Git features
 Plug 'itchyny/vim-gitbranch'
@@ -36,5 +38,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 
 call plug#end()
+
 
 
