@@ -5,9 +5,9 @@ set ignorecase
 set splitright
 set smartcase
 set signcolumn=yes
-set noexpandtab
-set tabstop=2
-set shiftwidth=2
+set expandtab
+set tabstop=4
+set shiftwidth=4
 set relativenumber
 set scrolloff=8
 set hidden
