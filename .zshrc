@@ -37,3 +37,5 @@ export NVM_DIR="$HOME/.nvm"
 # Source any local configurations
 touch ~/.zshlocal
 source ~/.zshlocal
+
+export PATH=$PATH:/home/garrettburroughs/.spicetify
