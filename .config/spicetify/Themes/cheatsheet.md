@@ -1,1 +1,0 @@
-/home/garrettburroughs/.dotfiles/cheatsheet.md
