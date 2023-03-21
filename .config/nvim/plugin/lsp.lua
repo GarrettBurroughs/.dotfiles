@@ -55,12 +55,12 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
-local servers = { 'pyright', 'rls', 'tsserver', 'clangd' }
+local servers = { 'pyright', 'rust-analyzer', 'tsserver', 'clangd' }
 local lsp = require'lspconfig'
 
 -- lsp.pyright.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.tsserver.setup{capabilities = capabilities, on_attach=on_attach}
-lsp.rls.setup{capabilities = capabilities, on_attach=on_attach}
+lsp.rust_analyzer.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.clangd.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.texlab.setup{capabilities = capabilities, on_attach = on_attach}
 lsp.pylsp.setup{capabilities = capabilities, on_attach = on_attach}
