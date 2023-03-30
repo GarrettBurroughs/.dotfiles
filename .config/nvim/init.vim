@@ -23,6 +23,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'kassio/neoterm'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'vim-utils/vim-man'
 
 " Formatting
 Plug 'tpope/vim-commentary'

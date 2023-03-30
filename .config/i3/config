@@ -44,6 +44,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+for_window [class="zoom"] floating enable
+for_window [class="zoom" title="Zoom - Licensed Account"] floating disable
+for_window [class="zoom" title="Zoom Meeting"] floating disable
+
 # start a terminal
 bindsym $mod+Return exec alacritty
 
