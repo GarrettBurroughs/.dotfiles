@@ -64,7 +64,7 @@ lsp.rust_analyzer.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.clangd.setup{capabilities = capabilities, on_attach=on_attach}
 lsp.texlab.setup{capabilities = capabilities, on_attach = on_attach}
 lsp.pylsp.setup{capabilities = capabilities, on_attach = on_attach}
-lsp.lua_ls.setup{capabilities = capabilities, on_attach = on_attach}
+-- lsp.lua_ls.setup{capabilities = capabilities, on_attach = on_attach}
 lsp.astro.setup{capabilities=capabilities, on_attach = on_attach, init_options = {
 	configuration = {}, 
 	typescript = { 

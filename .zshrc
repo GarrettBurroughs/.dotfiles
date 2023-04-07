@@ -1,7 +1,8 @@
 # ZSH Configuration 
 
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="half-life"
+# ZSH_THEME="half-life"
+ZSH_THEME="amuse"
 # HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode auto      # update automatically without asking
 ENABLE_CORRECTION="true"
