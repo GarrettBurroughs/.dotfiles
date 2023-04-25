@@ -27,4 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 . "$HOME/.cargo/env"
 
-feh --bg-fill ~/.wallpaper.png
+feh --bg-fill ~/.wallpapers/gruvbox.jpg
