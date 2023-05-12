@@ -21,3 +21,10 @@ vim.keymap.set('n', '<leader>f', builtin.find_files, {noremap=true})
 vim.keymap.set('n', '<leader>g', builtin.git_files, {noremap=true})
 vim.keymap.set('n', '<leader>:', builtin.commands, {noremap=true})
 
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("n", "<leader>R", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
