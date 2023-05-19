@@ -40,3 +40,5 @@ touch ~/.zshlocal
 source ~/.zshlocal
 
 export PATH=$PATH:/home/garrettburroughs/.spicetify
+
+export PATH=$PATH:/home/garrett/.spicetify
