@@ -34,6 +34,21 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+
+
+exec --no-startup-id xrandr --output HDMI-0 --primary --output DVI-D-0 --right-of HDMI-0 --output DP-5 --auto --left-of HDMI-0
+# exec --no-startup-id xrandr --output HDMI-0 --primary
+# exec --no-startup-id xrandr --output DVI-D-0 --right-of HDMI-0
+# exec --no-startup-id xrandr --output DP-5 --left-of HDMI-0
+exec --no-startup-id feh --bg-fill ~/.wallpapers/gruvbox.jpg
+# exec --no-startup-id xrandr --output DVI-D-0 --auto --right-of HDMI-0 &
+
+workspace 1 output HDMI-0
+workspace 2 output DP-5
+workspace 3 output DVI-D-0
+
+# exec --no-startup-id xrandr --output HDMI-0 --auto --right-of DP-5 &
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status

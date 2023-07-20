@@ -27,4 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 . "$HOME/.cargo/env"
 
-feh --bg-fill ~/.wallpapers/gruvbox.jpg
+export BG_PATH=~/.wallpapers/gruvbox.jpg
