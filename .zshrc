@@ -26,8 +26,16 @@ gtouch() {
 	if [ -z $1 ]; then 
 		echo "usage: gtouch <file>";
 	else 
-		touch $1 & git add $1;
+		touch $1 && git add $1;
 	fi
+}
+
+pdfgen() {
+    if [ -z $1 ]; then 
+        echo "usage: pdfgen <file>";
+    else
+        pandoc $1.md -o $1.pdf && xdg-open $1.pdf;
+    fi
 }
 
 # PATH exports 

@@ -1,4 +1,4 @@
-colorscheme gruvbox
+colorscheme catppuccin-macchiato
 syntax on
 set number
 set ignorecase
@@ -11,7 +11,7 @@ set shiftwidth=4
 set relativenumber
 set scrolloff=8
 set hidden
-set wrap
+" set wrap
 set colorcolumn=+1
 set textwidth=150
 set nohlsearch

@@ -17,7 +17,7 @@ vim.api.nvim_set_keymap('i', '"', '""<left>', {noremap=true});
 vim.api.nvim_set_keymap('i', '{<CR>', '{<CR>}<left><Esc>O', {noremap=true});
 
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>f', builtin.find_files, {noremap=true})
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {noremap=true})
 vim.keymap.set('n', '<leader>g', builtin.git_files, {noremap=true})
 vim.keymap.set('n', '<leader>:', builtin.commands, {noremap=true})
 

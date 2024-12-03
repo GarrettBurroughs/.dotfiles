@@ -36,6 +36,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main'}
 Plug 'gruvbox-community/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
 
