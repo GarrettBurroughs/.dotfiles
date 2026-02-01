@@ -8,6 +8,7 @@ Plug 'hrsh7th/nvim-cmp'     " Required
 Plug 'hrsh7th/cmp-nvim-lsp' " Required
 Plug 'L3MON4D3/LuaSnip'     " Required
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
+Plug 'olimorris/codecompanion.nvim'
 
 Plug 'mfussenegger/nvim-jdtls'
 " Git features
@@ -20,7 +21,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'kassio/neoterm'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': 'v0.1.9' }
 Plug 'ThePrimeagen/harpoon'
 Plug 'mbbill/undotree'
 
@@ -36,7 +37,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main'}
 Plug 'gruvbox-community/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 call plug#end()
 

@@ -1,4 +1,5 @@
-colorscheme catppuccin-macchiato
+" colorscheme catppuccin-macchiato
+colorscheme gruvbox
 syntax on
 set number
 set ignorecase
