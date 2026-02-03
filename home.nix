@@ -12,6 +12,7 @@
     rustc
     cargo
     rust-analyzer # The LSP
+    rustPlatform.rustLibSrc
   ];
 
   # 2. ZSH & Oh-My-Zsh
@@ -28,6 +29,7 @@
       };
 
       initContent = ''
+        export RUST_SRC_PATH="${pkgs.rustPlatform.rustLibSrc}"
         # Aliases
         alias v="nvim"
         alias vimconfig="v ~/.config/nvim"
