@@ -8,15 +8,22 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-
   outputs = { nixpkgs, home-manager, ... }: 
   let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
+    mkHome = username: homeDirectory: home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.x86_64-linux; # Adjust system if needed
+      modules = [
+        ./home.nix 
+        {
+          home.username = username;
+          home.homeDirectory = homeDirectory;
+        }
+      ];
+    };
   in {
-    homeConfigurations."gburroughs" = home-manager.lib.homeManagerConfiguration {
-      inherit pkgs;
-      modules = [ ./home.nix ];
+    homeConfigurations = {
+      "codespace" = mkHome "codespace" "/home/codespace";
+      "gburroughs" = mkHome "gburroughs" "/home/gburroughs"; 
     };
   };
 }

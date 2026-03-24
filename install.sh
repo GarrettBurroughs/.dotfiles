@@ -1,25 +1,14 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-set -e # Exit on error
+# 1. Install Nix in single-user mode (no daemon required)
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
-echo "Starting gburroughs development environment setup..."
+# 2. Source the Nix environment so the current script can use the 'nix' command
+. ~/.nix-profile/etc/profile.d/nix.sh
 
-if ! command -v nix &> /dev/null; then
-    echo "Installing Nix..."
-    curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
-    
-    . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
-else
-    echo "Nix is already installed."
-fi
-
+# 3. Enable flakes temporarily for the install command
 mkdir -p ~/.config/nix
-if ! grep -q "experimental-features" ~/.config/nix/nix.conf 2>/dev/null; then
-    echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
-    echo "Enabled Nix Flakes."
-fi
+echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 
-echo "Running Home Manager switch..."
-nix run github:nix-community/home-manager -- switch --flake .#gburroughs -b backup
-
-echo "Setup complete! Restart your terminal or run 'exec zsh'."
+# 4. Run your Home Manager flake
+nix run github:nix-community/home-manager -- switch --flake .#$USER -b backup

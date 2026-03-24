@@ -1,6 +1,4 @@
 { pkgs, ... }: {
-  home.username = "gburroughs";
-  home.homeDirectory = "/home/gburroughs";
   home.stateVersion = "23.11";
 
   # 1. Packages (Binaries)
